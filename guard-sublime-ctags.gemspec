@@ -1,11 +1,9 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/guard-sublime-ctags/version', __FILE__)
-
 Gem::Specification.new do |gem|
-  gem.authors       = ["Sunteya"]
-  gem.email         = ["Sunteya@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.authors       = ["sunteya"]
+  gem.email         = ["sunteya@gmail.com"]
+  gem.description   = %q{guard for sublime text ctag plugin}
+  gem.summary       = %q{guard for sublime text ctag plugin}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -13,5 +11,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "guard-sublime-ctags"
   gem.require_paths = ["lib"]
-  gem.version       = Guard::Sublime::Ctags::VERSION
+  gem.version       = File.read(File.expand_path("../VERSION", __FILE__)).chomp
+  
+  gem.add_dependency "gemtags"
+  
+  gem.add_development_dependency "rake"
+  gem.add_development_dependency "version"
 end
