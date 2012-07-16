@@ -1,7 +1,8 @@
 # Guard::Sublime-Ctags
 
 Guard::Sublime-Ctags allows you to automatically run ctag command when files are modified. 
-the generated files compatible with default sublime text2's [ctags plugin](https://github.com/SublimeText/CTags).
+
+The generated files compatible with default [Sublime Text's Ctags plugin](https://github.com/SublimeText/CTags).
 
 ## Installation
 
