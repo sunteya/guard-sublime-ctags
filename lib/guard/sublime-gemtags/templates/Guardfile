@@ -1,3 +1,0 @@
-guard 'sublime-gemtags' do
-  watch("Gemfile.lock")
-end
