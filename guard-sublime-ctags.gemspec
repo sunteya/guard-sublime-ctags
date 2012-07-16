@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{it allows you to automatically run ctag command when files are modified. 
 the generated files compatible with default sublime text's ctags plugin.}
   gem.summary       = %q{guard for sublime text's ctag plugin}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/sunteya/guard-sublime-ctags"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
