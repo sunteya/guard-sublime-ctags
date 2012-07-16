@@ -1,0 +1,3 @@
+guard 'sublime-ctags' do
+  watch(%r{^(app|config|lib|vendor).*(/[^.][^/]+$)})
+end
