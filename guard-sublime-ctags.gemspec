@@ -2,8 +2,9 @@
 Gem::Specification.new do |gem|
   gem.authors       = ["sunteya"]
   gem.email         = ["sunteya@gmail.com"]
-  gem.description   = %q{guard for sublime text ctag plugin}
-  gem.summary       = %q{guard for sublime text ctag plugin}
+  gem.description   = %q{it allows you to automatically run ctag command when files are modified. 
+the generated files compatible with default sublime text's ctags plugin.}
+  gem.summary       = %q{guard for sublime text's ctag plugin}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -13,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = File.read(File.expand_path("../VERSION", __FILE__)).chomp
   
+  gem.add_dependency "guard"
   gem.add_dependency "gemtags"
   
   gem.add_development_dependency "rake"
