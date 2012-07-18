@@ -2,7 +2,7 @@
 
 Guard::Sublime-Ctags allows you to automatically run ctag command when files are modified. 
 
-The generated files compatible with default [Sublime Text's Ctags plugin](https://github.com/SublimeText/CTags).
+The generated files compatible with default [Sublime Text Ctags plugin](https://github.com/SublimeText/CTags).
 
 ## Installation
 
@@ -10,13 +10,15 @@ Add this line to your application's Gemfile:
 
     gem 'guard-sublime-ctags'
 
-And then execute:
-
-    $ bundle
-
 Add guard definitions to your Guardfile by running:
 
     $ guard init sublime-ctags
+
+### OS X
+
+If anyone is having trouble getting the CTags -R flag to work on OSX, you are probably using the stock CTags installation. to get a proper copy of ctags, use the following options:
+
+    brew install ctags 
 
 ## Usage
 
